@@ -169,7 +169,7 @@ The RBC is happy with your work so far and they would like to use your services 
 - Open a new project
 - Add a basemap
   - `Google Satelite` through the QuickMapServices plugin
-- [Download the files]()
+- [Download the files](https://ughe-my.sharepoint.com/:u:/g/personal/gagazi_ughe_org/EaFUJmtuXhVDpQBSpUo3YUgB7BOkC3nI89VZeB3yWpCCig?e=DqTWjC)
 - Unzip the folder
 - Add the `.shp` file entitled `selection_houses`
 - Zoom to the area of interest
