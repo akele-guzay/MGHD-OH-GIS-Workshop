@@ -1,5 +1,7 @@
 # MGHD-OH-GIS-Workshop
 
+![banner image](https://github.com/akele-guzay/MGHD-OH-GIS-Workshop/blob/main/pictures/banner.png)
+
 In this hands on workshop, you will explore the concepts of Geographic Information Systems and use the free and open source QGIS software to create different vector elements as well as use public health data to create a compelling choropleth maps. 
 
 
