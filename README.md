@@ -136,7 +136,7 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
 
 ``` markdown
 1️⃣ Plugins menu > Manage and Install Plugins… 
-    • Scroll down, or search all plugins for `quickmap`` (you don’t need to type the whole name) 
+    • Scroll down, or search all plugins for `quickmap` (you don’t need to type the whole name) 
     • Select the QuickMapServices plugin 
     • Click the `Install plugin` button (it installs in seconds) 
     • Click `Close` 
