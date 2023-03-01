@@ -37,7 +37,8 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
     - Units for distance measurement: meters
   - CRS: `EPSG:3857`
 - Add a basemap
-  - ```A basemap is a layer that provides geographical context to the map and other dataset layers above it.```
+  - `A basemap is a layer that provides geographical context to the map and other dataset
+  layers above it.`
 - Find the Kigali airport
 ```
 
