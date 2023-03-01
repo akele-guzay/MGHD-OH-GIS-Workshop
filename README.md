@@ -166,8 +166,7 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
 
 The RBC is happy with your work so far and they would like to use your services to assess an alarming cluster of asthma cases in one of the districts. They have a suspicion that the cause of the asthma cases is the polution from heavy trucks using the main road that passes through the comminity. They have sent you a shape file containing the a number of households along a section of the road. They would like for you to identify and isolate the houses within 50 meters of the main road. 
 
-``` markdown
-*Initial steps* 🪜
+#### Initial steps 🪜
 
 - Open a new project
 - Add a basemap
@@ -177,7 +176,6 @@ The RBC is happy with your work so far and they would like to use your services 
 - Add the `.shp` file entitled `selection_houses`
 - Zoom to the area of interest
   - `Zoom to layers option`
-```
 
 ### Activity 4: Air polution & asthma 🫁
 
