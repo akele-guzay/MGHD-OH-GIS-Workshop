@@ -24,7 +24,7 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
 ### Activity 1: Creating the hand washing stations 🧴
 
 ``` markdown
-*Initial steps*
+*Initial steps* 🪜
 
 - Launch QGIS
 - Go into the Projects setting
@@ -135,7 +135,7 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
 ### Knowledge bomb 💣
 
 ``` markdown
-What we've been doing so far is called 'Digitizing'
+**What we've been doing so far is called 'Digitizing'**
 ```
 
 #### Changing basemaps via QuickMapServices 🗺
@@ -156,5 +156,76 @@ What we've been doing so far is called 'Digitizing'
 #### Tiny exercise 🏋🏽‍♀️
 
 ``` markdown
-- Calculate the areas of the buildings
+- Calculate the areas of the buildings in exchange for chocolate! 🍫😋
 ```
+---
+## Case scenario 2: Air Pollution 😤
+
+The RBC is happy with your work so far and they would like to use your services to assess an alarming cluster of asthma cases in one of the districts. They have a suspicion that the cause of the asthma cases is the polution from heavy trucks using the main road that passes through the comminity. They have sent you a shape file containing the a number of households along a section of the road. They would like for you to identify and isolate the houses within 50 meters of the main road. 
+
+``` markdown
+*Initial steps* 🪜
+
+- Open a new project
+- Add a basemap
+  - `Google Satelite` through the QuickMapServices plugin
+- Download the files
+- Unzip the folder
+- Add the `.shp` file entitled `selection_houses`
+- Zoom to the area of interest
+  - `Zoom to layers option`
+```
+
+### Activity 4: Air polution & asthma 🫁
+
+``` markdown
+        1. Let’s add a layer containing a road going through the community
+        2. How to select some houses
+            a) Option 1
+                1. Open attribute table for selection_houses
+                2. Click Select features by area – select an area of houses
+            b) Option 2: select houses within 50 meters of the main road (EPSG:3857)
+                1. Method 1: by creating a 50 m buffer around our road
+                    a) Select selection_road layer → Vector → geoprocessing tools →buffer
+                        1. input layer: selection_road
+                        2. distance: 50 m (0.0005 for those whose unit is decimal points)
+                        3. Run
+                        4. readjust layers → check if the distance really is 50m
+                        5. Now we’re ready to select the houses within the buffer zone
+                            1. Click on ‘Select by location’ or Vector → research tools → Select by location
+                                1. select feature from: selection_roads
+                                2. where the features: intersect
+                                3. by comparing: buffered
+                                4. Run
+                                5. Show them how to invert selection and deselect
+        3. How do we create a new layer from the selections?
+            a) With the houses selected → right click on layer  → export → save selected feature as1. How to select some houses
+            a) Option 1
+                1. Open attribute table for selection_houses
+                2. Click Select features by area – select an area of houses
+            b) Option 2: select houses within 50 meters of the main road (EPSG:3857)
+                1. Method 1: by creating a 50 m buffer around our road
+                    a) Select selection_road layer → Vector → geoprocessing tools →buffer
+                        1. input layer: selection_road
+                        2. distance: 50 m (0.0005 for those whose unit is decimal points)
+                        3. Run
+                        4. readjust layers → check if the distance really is 50m
+                        5. Now we’re ready to select the houses within the buffer zone
+                            1. Click on ‘Select by location’ or Vector → research tools → Select by location
+                                1. select feature from: selection_roads
+                                2. where the features: intersect
+                                3. by comparing: buffered
+                                4. Run
+                                5. Show them how to invert selection and deselect
+        2. How do we create a new layer from the selections?
+            a) With the houses selected → right click on layer  → export → save selected feature as
+        3. How to calculate distance between points: What is the distance from each house to the hospital in meters?
+            a) Toolbox: distance to nearest hub
+        4. How to calculate distance from points to line: What is the distance of the houses to the main road?
+            a) First we need to convert the road into a series of points
+                1. Vector → geometry tools → extract vertices
+                2. then distance to nearest hub
+                    a) Make sure to change hub layer name attribute to vertex_index
+                    b) change label of the vertices to the vertex id
+```
+
