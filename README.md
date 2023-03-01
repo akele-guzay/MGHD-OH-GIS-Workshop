@@ -27,7 +27,15 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
 *Initial steps*
 
 - Launch QGIS
+- Go into the Projects setting
+  - General
+    - Project file: GIS_Workshop
+    - Prject home
+    - Project title
+    - Units for distance measurement: meters
+  - CRS: `EPSG:3857`
 - Add a basemap
+  - `A basemap is a layer that provides geographical context to the map and other dataset layers above it.`
 - Find the Kigali airport
 ```
 
@@ -82,22 +90,23 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
             2. then input the right information and click save
             3. exit editing mode and save changes to layer
         4. Click on the attribute table so we can see what we entered
-        5. Let’s say you want to calculate the length of our road – 3 ways to do this
+        5. Let’s say you want to calculate the length of our paths – 2 ways to do this
             1. toggle the editing icon on attribute table view
-            2. click ‘Open field calculator’ (ctrl+i)
-                1. fill in the following info:
-                    1. Output field name: road_length
+               2. click `Open field calculator` (ctrl+i)
+                  1. fill in the following info:
+                    1. Output field name: length
                     2. output field type: decimal number (real)
                     3. Expression box: $length
                     4. press ‘OK’
-            3. Another method:
-                1. processing → toolbox
-                2. type: add geometry
-                    1. input layer: choose the road layer
-                    2. calculate using: project crs
-                    3. Click ‘Run’ → creates a new layer
-            4. Easy way for quick measurements
+            2. Easy way for quick measurements
                 1. click the ‘measure line’ on top
                 2. click along the line → write click when you’re done
-                3. Question: What’s the length of the runway?
+                   a. Question: What’s the length of the runway?
                 4. click on the ‘pan map’ hand icon
+                
+#### Stylizing our wash points and paths 💄
+    f) Let’s say we want to change the color of our wash points based on number of taps and the shape of the icons
+        1. right click on the hand washing layer → properties → symbologies → categorized (this is for discreet values)→ change value to `tap#` → click classify at the bottom → apply
+        2. click Labels → single label → `tap#`
+        3. Question: change the marker and color of the road and label it with ‘road length’                
+
