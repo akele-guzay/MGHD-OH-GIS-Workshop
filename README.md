@@ -35,10 +35,11 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
     - Units for distance measurement: meters
   - CRS: `EPSG:3857`
 - Add a basemap
-  - `A basemap is a layer that provides geographical context to the map and other dataset layers above it.`
+  - ```A basemap is a layer that provides geographical context to the map and other dataset layers above it.```
 - Find the Kigali airport
 ```
 
+``` markdown
     a) Create a folder in your desktop – QGIS course
     b) Creating a new layer
         1. layer → create layer → new shapefile layer
@@ -71,7 +72,11 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
                     4. to save changes: click on edit mode icon
         5. Save your file
         
+```
+        
 ### Activity 2: Paths for disembarking 🚸
+
+``` markdown
     d) Creating a new layer
         1. layer → create layer → new shapefile layer
         2. layer information
@@ -103,10 +108,43 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
                 2. click along the line → write click when you’re done
                    a. Question: What’s the length of the runway?
                 4. click on the ‘pan map’ hand icon
-                
+```
+
 #### Stylizing our wash points and paths 💄
+
+``` markdown
     f) Let’s say we want to change the color of our wash points based on number of taps and the shape of the icons
         1. right click on the hand washing layer → properties → symbologies → categorized (this is for discreet values)→ change value to `tap#` → click classify at the bottom → apply
         2. click Labels → single label → `tap#`
-        3. Question: change the marker and color of the road and label it with ‘road length’                
+        3. Question: change the marker and color of the road and label it with ‘road length’   
+```
 
+### Activity 3: Selecting buildings for screening 🏢
+
+``` markdown
+    g) Reproduce the processes from before
+    h) Fields
+        1. bldg_name: string
+        2. bldg_type: string
+        3. door#: integer (32bit)
+        4. window#: integer (32bit)
+    i) trace the airport buildings with paths – right click when you’re done
+    k) toggle editing button → save
+```
+
+#### Changing basemaps via QuickMapServices 🗺
+
+``` markdown
+1️⃣ Plugins menu > Manage and Install Plugins… 
+    • Scroll down, or search all plugins for `quickmap`` (you don’t need to type the whole name) 
+    • Select the QuickMapServices plugin 
+    • Click the `Install plugin` button (it installs in seconds) 
+    • Click `Close` 
+
+2️⃣ When you first install QuickMapServices, you'll want to get the full set of basemap definitions.
+    • Web menu > QuickMapServices > Settings 
+    • `More services` tab > `Get contributed pack`
+
+3️⃣ To add the Google Satelite basemap, which combines aerial photos with place name labels:
+    • Web menu > QuickMapServices > Google > Google Satellite
+```
