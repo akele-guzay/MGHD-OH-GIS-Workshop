@@ -5,10 +5,10 @@ In this hands on workshop, you will explore the concepts of Geographic Informati
 
 # Pre-requisites
 
-1. A laptop
-2. Internet
-3. [QGIS Software]()
-4. Vibes 😎
+1. A laptop 💻
+2. Internet 👩🏽‍💻
+3. [QGIS Software](https://www.qgis.org/en/site/forusers/download.html)
+4. Mad Vibes 😎
 ---
 
 ## Case Scenario: Ebola Season 😱🏃🏽‍♀️✈️
@@ -132,6 +132,12 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
     k) toggle editing button → save
 ```
 
+### Knowledge bomb 💣
+
+``` markdown
+What we've been doing so far is called 'Digitizing'
+```
+
 #### Changing basemaps via QuickMapServices 🗺
 
 ``` markdown
@@ -140,11 +146,15 @@ It is Ebola season in Uganda and the DRC. The Rwandan Biomedial Center (RBC) is 
     • Select the QuickMapServices plugin 
     • Click the `Install plugin` button (it installs in seconds) 
     • Click `Close` 
-
 2️⃣ When you first install QuickMapServices, you'll want to get the full set of basemap definitions.
     • Web menu > QuickMapServices > Settings 
     • `More services` tab > `Get contributed pack`
-
 3️⃣ To add the Google Satelite basemap, which combines aerial photos with place name labels:
     • Web menu > QuickMapServices > Google > Google Satellite
+```
+
+#### Tiny exercise 🏋🏽‍♀️
+
+``` markdown
+- Calculate the areas of the buildings
 ```
