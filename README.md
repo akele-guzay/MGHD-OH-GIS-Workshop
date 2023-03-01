@@ -169,7 +169,7 @@ The RBC is happy with your work so far and they would like to use your services 
 - Open a new project
 - Add a basemap
   - `Google Satelite` through the QuickMapServices plugin
-- Download the files
+- [Download the files]()
 - Unzip the folder
 - Add the `.shp` file entitled `selection_houses`
 - Zoom to the area of interest
@@ -180,13 +180,12 @@ The RBC is happy with your work so far and they would like to use your services 
 
 ``` markdown
         1. Let’s add a layer containing a road going through the community
-        2. How to select some houses
-            a) Option 1
-                1. Open attribute table for selection_houses
-                2. Click Select features by area – select an area of houses
-            b) Option 2: select houses within 50 meters of the main road (EPSG:3857)
-                1. Method 1: by creating a 50 m buffer around our road
-                    a) Select selection_road layer → Vector → geoprocessing tools →buffer
+        2. Let's select some houses randomly
+            a) Open attribute table for selection_houses
+            b) Click Select features by area – select an area of houses
+        3. Let's select houses within 50 meters of the main road (EPSG:3857)
+            1. Method 1: by creating a 50 m buffer around our road
+                a) Select selection_road layer → Vector → geoprocessing tools →buffer
                         1. input layer: selection_road
                         2. distance: 50 m (0.0005 for those whose unit is decimal points)
                         3. Run
@@ -199,33 +198,6 @@ The RBC is happy with your work so far and they would like to use your services 
                                 4. Run
                                 5. Show them how to invert selection and deselect
         3. How do we create a new layer from the selections?
-            a) With the houses selected → right click on layer  → export → save selected feature as1. How to select some houses
-            a) Option 1
-                1. Open attribute table for selection_houses
-                2. Click Select features by area – select an area of houses
-            b) Option 2: select houses within 50 meters of the main road (EPSG:3857)
-                1. Method 1: by creating a 50 m buffer around our road
-                    a) Select selection_road layer → Vector → geoprocessing tools →buffer
-                        1. input layer: selection_road
-                        2. distance: 50 m (0.0005 for those whose unit is decimal points)
-                        3. Run
-                        4. readjust layers → check if the distance really is 50m
-                        5. Now we’re ready to select the houses within the buffer zone
-                            1. Click on ‘Select by location’ or Vector → research tools → Select by location
-                                1. select feature from: selection_roads
-                                2. where the features: intersect
-                                3. by comparing: buffered
-                                4. Run
-                                5. Show them how to invert selection and deselect
-        2. How do we create a new layer from the selections?
             a) With the houses selected → right click on layer  → export → save selected feature as
-        3. How to calculate distance between points: What is the distance from each house to the hospital in meters?
-            a) Toolbox: distance to nearest hub
-        4. How to calculate distance from points to line: What is the distance of the houses to the main road?
-            a) First we need to convert the road into a series of points
-                1. Vector → geometry tools → extract vertices
-                2. then distance to nearest hub
-                    a) Make sure to change hub layer name attribute to vertex_index
-                    b) change label of the vertices to the vertex id
 ```
 
