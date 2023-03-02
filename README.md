@@ -286,5 +286,6 @@ They have provided the following two documents
 
 ## References
 
+- [QGIS Documentation](https://docs.qgis.org/3.22/en/docs/index.html)
 - [QGIS Tutorials](https://www.qgistutorials.com/en/index.html)
 - [How to make a map](https://www.qgistutorials.com/en/docs/3/making_a_map.html)
