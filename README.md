@@ -221,7 +221,8 @@ They have provided the following two documents
 2. Open QGIS & create a new project
    - Select the appropriate folder
    - Make sure the project CRS is EPSG:3857
-3. Add a base-map: `ESRI Gray (dark)`
+3. Add a base-map
+   - `Web`-->`QuickMapServices`-->`CartoDB`-->`Positron (retina)`
 4. Find and add Rwanda’s shapefile
 	- Download the shapefile [here](https://diva-gis.org/gdata)
 	- Add it to QGIS
