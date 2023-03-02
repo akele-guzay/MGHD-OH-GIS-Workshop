@@ -286,4 +286,4 @@ They have provided the following two documents
 
 ## References
 
-- [How to make a map](https://www.qgistutorials.com/en/docs/making_a_map.html)
+- [How to make a map](https://www.qgistutorials.com/en/docs/3/making_a_map.html)
