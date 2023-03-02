@@ -202,7 +202,7 @@ The RBC is happy with your work so far and they would like to use your services 
             a) With the houses selected → right click on layer  → export → save selected feature as
 ```
 ---
-## Case scenario 3: Rwand Mass Drug Administration Campaign 🇷🇼
+## Case scenario 3: Rwand Mass Drug Administration Campaign 🇷🇼🪱🥋
 
 You’re contacted by the Rwandan Biomedical Center (RBC) Neglected Tropical Diseases (NTD) Program to assist with some GIS work. The program conducts yearly mass drug administration (MDA) campaigns where they distribute anti soil transmitted helmenthiasis (STH) medicine (albendazole) to pre-school-aged children (Pre-SAC). Once a year, parents bring their children to the closest health center to receive the drugs. The campaigns are preceded by mass mobilization campaigns used to communicate information about the MDA. 
 
