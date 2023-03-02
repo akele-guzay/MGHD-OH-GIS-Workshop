@@ -201,7 +201,7 @@ The RBC is happy with your work so far and they would like to use your services 
         3. How do we create a new layer from the selections?
             a) With the houses selected → right click on layer  → export → save selected feature as
 ```
-
+---
 ## Case scenario 3: Rwand Mass Drug Administration Campaign 🇷🇼
 
 You’re contacted by the Rwandan Biomedical Center (RBC) Neglected Tropical Diseases (NTD) Program to assist with some GIS work. The program conducts yearly mass drug administration (MDA) campaigns where they distribute anti soil transmitted helmenthiasis (STH) medicine (albendazole) to pre-school-aged children (Pre-SAC). Once a year, parents bring their children to the closest health center to receive the drugs. The campaigns are preceded by mass mobilization campaigns used to communicate information about the MDA. 
@@ -214,8 +214,6 @@ They have provided the following two documents
 - Distribution of health centers in Rwanda
 
 ### Activity 5: Rwand Mass Drug Administration Campaign 💊
-
-``` markdown
    
 1. Conceptualize the assignment
 	- What is the required output? 
@@ -258,15 +256,15 @@ They have provided the following two documents
      - `X field`: long
      - `Y field`: lat
      - `Geometry CRS`: Default CRS `EPSG:4326 -WGS 84`
-7. Stylize the new health centers layer
-8. Steps for creating a map for sharing
+10. Stylize the new health centers layer
+11. Steps for creating a map for sharing
    - What do you think should be included in a map?
    - Take a look at the sample map shared by the RBC team 👉🏽 [here](https://ughe-my.sharepoint.com/:b:/g/personal/gagazi_ughe_org/EYc_kHHUpdNApvytsVzlZzAB_7N_3usBzyunKc68mw1u8g?e=KHBZQX)
-9. Creating the map
+12. Creating the map
    - Click on `Project` --> `New print layer`
    - Enter the title: `STH MDA`
    - Click `Ok`
-10. Conduct the following activites
+13. Conduct the following activites
    - [ ] Create guidelines
      - Click on `Guides`
        - `Horizotal Guides`: 10mm, 200mm
@@ -276,7 +274,7 @@ They have provided the following two documents
    - [ ] Add north
    - [ ] Add scale
    - [ ] Add information about the map
-- Export the map
+14. Export the map
 	- Pdf 
 	- png 
 
