@@ -202,3 +202,82 @@ The RBC is happy with your work so far and they would like to use your services 
             a) With the houses selected → right click on layer  → export → save selected feature as
 ```
 
+## Case scenario 3: Rwand Mass Drug Administration Campaign 🇷🇼
+
+You’re contacted by the Rwandan Biomedical Center (RBC) Neglected Tropical Diseases (NTD) Program to assist with some GIS work. The program conducts yearly mass drug administration (MDA) campaigns where they distribute anti soil transmitted helmenthiasis (STH) medicine (albendazole) to pre-school-aged children (Pre-SAC). Once a year, parents bring their children to the closest health center to receive the drugs. The campaigns are preceded by mass mobilization campaigns used to communicate information about the MDA. 
+
+After each MDA, the program reviews it’s coverage rate by comparing the number of children actually treated vs the projected Pre-SAC count before the launch of the campaign. The unit wants your assistance in visualizing their coverage rate for 2021 at the district level. Furthermore, they would like to compare the coverage rate in relation to the availability and distribution of health centers in the districts. 
+
+They have provided the following two documents
+
+- STH MDA Coverage data
+- Distribution of health centers in Rwanda
+
+### Activity 5: Rwand Mass Drug Administration Campaign 💊
+
+``` markdown
+   
+1. Conceptualize the assignment
+	- What is the required output? 
+	- What things do you need to make this map?
+2. Open QGIS & create a new project
+   - Select the appropriate folder
+   - Make sure the project CRS is EPSG:3857
+3. Add a base-map: Google Terrain
+4. Find and add Rwanda’s shapefile
+	- Download the shapefile [here](https://diva-gis.org/gdata)
+	- Add it to QGIS
+	- Explore its contents through the attributes table function
+5. Download the document containing the information for MDA coverage at district level 👉🏽 [here](https://ughe-my.sharepoint.com/:x:/g/personal/gagazi_ughe_org/Ef1ylSR4fFFAuDKbOqOE9XgB0hYi3qSCW43eOWiGW-j3Gg?e=U99pYr)
+   - Explore the csv file. What do you see? What is useful for you inorder to make the map?
+   - Edit the file to meet your needs
+4. Import the csv file into QGIS
+   - Click on `Layer` --> `Add layer` --> `Add Delimited Text Layer`
+   - `File Name`: locate the downloaded csv file
+   - `Layer Name`: STH MDA Coverage
+   - `File format`: csv
+   - `Geometry Definition`: no geometry
+   - Clic `Add`
+   - What do you see on the layer list?
+     - Open the new layer with the `Open attribute table`
+5. Join the data to Rwanda's shapefile
+   - Open the layer properties for Rwanda's shape file
+   - Click `Joins'
+   - Click the add symbol
+   - `Join layer`: STH MDA layer
+   - `Join field`: Coverage
+   - `Target field`: NAME_2
+   - Check `Dynamic form` and `Editable layers`
+   - Click `OK`
+   - Click `Apply` then `Ok`
+   - Explore the attribute table for Rwanda's shape file. What do you see? 👀
+6. Change the symbology the map using the MDA coverage information
+8. Download the document containing information about the distribution of health centers in Rwanda 👉🏽 (here)[https://ughe-my.sharepoint.com/:x:/g/personal/gagazi_ughe_org/ERIlsTsZN-ROtPEaZ8WoWk4BuW1uXXPo_1_SlRewmcnHBA?e=H7T30n]
+9. Add the csv file containing the distribution of health centers in Rwanda into QGIS
+   - `Geometry Definition`: point coordinates
+     - `X field`: long
+     - `Y field`: lat
+     - `Geometry CRS`: Default CRS `EPSG:4326 -WGS 84`
+7. Stylize the new health centers layer
+8. Steps for creating a map for sharing
+   - What do you think should be included in a map?
+   - Take a look at the sample map shared by the RBC team 👉🏽 [here](https://ughe-my.sharepoint.com/:b:/g/personal/gagazi_ughe_org/EYc_kHHUpdNApvytsVzlZzAB_7N_3usBzyunKc68mw1u8g?e=KHBZQX)
+9. Creating the map
+   - Click on `Project` --> `New print layer`
+   - Enter the title: `STH MDA`
+   - Click `Ok`
+10. Conduct the following activites
+   - [ ] Create guidelines
+     - Click on `Guides`
+       - `Horizotal Guides`: 10mm, 200mm
+       - `Vertical Guides`: 10mm, 200mm, 205mm, 285mm
+   - [ ] Add maps
+   - [ ] Add title
+   - [ ] Add north
+   - [ ] Add scale
+   - [ ] Add information about the map
+- Export the map
+	- Pdf 
+	- png 
+
+```
