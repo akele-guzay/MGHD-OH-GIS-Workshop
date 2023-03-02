@@ -281,3 +281,9 @@ They have provided the following two documents
 15. Export the map
 	- [ ] Pdf 
 	- [ ] png 
+
+---
+
+## References
+
+- [How to make a map](https://www.qgistutorials.com/en/docs/making_a_map.html)
