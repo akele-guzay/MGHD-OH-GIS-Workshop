@@ -221,7 +221,7 @@ They have provided the following two documents
 2. Open QGIS & create a new project
    - Select the appropriate folder
    - Make sure the project CRS is EPSG:3857
-3. Add a base-map: Google Terrain
+3. Add a base-map: `ESRI Gray (dark)`
 4. Find and add Rwanda’s shapefile
 	- Download the shapefile [here](https://diva-gis.org/gdata)
 	- Add it to QGIS
@@ -270,13 +270,13 @@ They have provided the following two documents
      - Click on `Guides`
        - `Horizotal Guides`: 10mm, 200mm
        - `Vertical Guides`: 10mm, 200mm, 205mm, 285mm
-   - [ ] Add maps
+   - [ ] Add map
+     - Check `Lock layers` and `Lock styles for layers` when you are done editing
+     - [ ] Add map inset
    - [ ] Add title
    - [ ] Add north
    - [ ] Add scale
-   - [ ] Add information about the map
+   - [ ] Add citation and other information
 15. Export the map
-	- Pdf 
-	- png 
-
-```
+	- [ ] Pdf 
+	- [ ] png 
