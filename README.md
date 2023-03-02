@@ -240,7 +240,7 @@ They have provided the following two documents
      - Open the new layer with the `Open attribute table`
 7. Join the data to Rwanda's shapefile
    - Open the layer properties for Rwanda's shape file
-   - Click `Joins'
+   - Click `Joins`
    - Click the add symbol
    - `Join layer`: STH MDA layer
    - `Join field`: Coverage
@@ -259,6 +259,7 @@ They have provided the following two documents
 11. Stylize the new health centers layer
 12. Steps for creating a map for sharing
    - What do you think should be included in a map?
+     - Cartographic guideline 👉🏽 [here](https://ughe-my.sharepoint.com/:b:/g/personal/gagazi_ughe_org/EXR9D-rLV9pBtSX8_ZOz_X8BJ8_LlbiBkK85ha9HDe7kvA?e=ld1uMU)
    - Take a look at the sample map shared by the RBC team 👉🏽 [here](https://ughe-my.sharepoint.com/:b:/g/personal/gagazi_ughe_org/EYc_kHHUpdNApvytsVzlZzAB_7N_3usBzyunKc68mw1u8g?e=KHBZQX)
 13. Creating the map
    - Click on `Project` --> `New print layer`
