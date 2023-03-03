@@ -244,7 +244,7 @@ They have provided the following two documents
    - Click `Joins`
    - Click the add symbol
    - `Join layer`: STH MDA layer
-   - `Join field`: Coverage
+   - `Join field`: District
    - `Target field`: NAME_2
    - Check `Dynamic form` and `Editable layers`
    - Click `OK`
